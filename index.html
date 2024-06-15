@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <div id="particles-js"></div>
+  
+  <nav id="desktop-nav">
+    <div class="logo">HARI KRISHNA AGEER</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <nav id="hamburger-nav">
+    <div class="logo">Hari Krishna Ageer</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Hari Krishna Ageer</h1>
+      <p class="section__text__p2">Data Engineer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/HARIKRISHNA -RESUME-(USF).pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/hari-0b09531a0/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/ageerHarikrishna'" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="about-details-container">
+      <div class="section__pic-container">
+        <img src="./assets/hka.jpeg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="details-container">
+        <div class="details-inner-container">
+          <div class="details-card">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>2+ years <br />Data Engineer</p>
+          </div>
+          <div class="details-card">
+            <img src="./assets/usf.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>University of South Florida</p>
+            <p>Masters in Business Analytics and Information Systems</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I specialize in big data ETL development and cloud data solutions. My experience spans across various data engineering roles and coursework at the University of South Florida, enhancing my skills in data engineering and analysis.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">My</p>
+    <h1 class="title">Work Experience</h1>
+    <div class="experience-container">
+      <div class="job">
+        <h3>Quantiphi</h3>
+        <p><strong>Data Engineer (Full Time) Nov 2022 – July 2023</strong></p>
+        <ul>
+          <li>Design and development of a robust data engineering framework on AWS, coupled with a Postgres SQL Database, resulting in a remarkable 30% improvement in data processing efficiency across multiple sources.</li>
+          <li>Designed an automation system to address the time-consuming and error-prone process of manual column and table updates, significantly reducing risk and improving data integrity by 80% across various environments.</li>
+          <li>Collaborated closely with business stakeholders to understand requirements and translate them into technical solutions, facilitating the creation of data analysis pipelines tailored to specific business needs.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Tiger Analytics</h3>
+        <p><strong>Data Engineer (Internship) Jan 2022 – July 2022</strong></p>
+        <ul>
+          <li>Refined advanced analytical techniques to analyze customer behavior data, identifying key trends and opportunities for optimization. Recommendations resulted in a 25% increase in average order value and a 30% improvement in customer retention.</li>
+          <li>Contributed to data warehousing initiatives, spearheading the extraction, transformation, and loading (ETL) of expansive datasets.</li>
+        </ul>
+      </div>
+      <!-- Add more job experiences as needed -->
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="project-details-container">
+      <div class="project">
+        
+        <h4 class="project-title">
+          <a href="https://github.com/ageerHarikrishna/Twitter-Data-Pipeline-using-Airflow" class="project-title-link">
+            Twitter Data Pipeline using Airflow
+          </a>
+        </h4>
+        <p>This project demonstrates an end-to-end data engineering pipeline using Airflow and Python to extract, transform, and load (ETL) Twitter data. For businesses, this pipeline provides valuable insights into customer sentiments and trends, enabling data-driven marketing strategies.</p>
+        <p>Using Airflow, I orchestrated the ETL process, extracting data via the Twitter API. Python scripts cleaned and transformed the data, leveraging programming skills. The pipeline deployed on an EC2 instance stored results in Amazon S3, demonstrating my expertise in cloud services. SQL was used for data aggregation, and visualization tools highlighted key trends. This project illustrates my capabilities in data engineering and analysis.</p>
+        <p>This pipeline provides real-time insights into consumer sentiment and trends, enabling data-driven marketing strategies. Increases customer engagement and enables rapid response to public comments. This leads to better decision-making, better marketing efforts, and improved overall efficiency.</p>
+      </div>
+      <div class="project">
+       
+        <h4 class="project-title">
+          <a href="https://github.com/ageerHarikrishna/Data-Mining-Project" class="project-title-link">
+            Predictive Analytics for Caravan Insurance
+          </a>
+        </h4>
+        <p>This project uses predictive analytics to identify customers likely to purchase caravan insurance. By analyzing 86 features related to customer demographics, behaviors, and existing policy data, the model scores each customer’s propensity to buy caravan insurance, optimizing marketing strategies.</p>
+        <p>Using training data, we built a model to predict customer likelihood of purchasing caravan insurance. We processed and analyzed the data using Python, applying machine learning techniques and feature engineering to develop the predictive model. The model was evaluated to ensure high identification of potential buyers.</p>
+        <p>The predictive model allows the company to target marketing efforts more effectively, reducing acquisition costs and increasing marketing ROI. This leads to better resource allocation, improved customer engagement, and overall enhanced business performance.</p>
+      </div>
+      <div class="project">
+        <h4 class="project-title">
+          <a href="https://github.com/ageerHarikrishna/Diwali_Sales_Analysis" class="project-title-link">
+            Sales Analysis using Python
+          </a>
+        </h4>
+        <p>This project aims to identify trends in Diwali sales to enhance customer satisfaction and boost revenue. By analyzing sales data, product preferences, purchasing patterns, and customer demographics, we uncover actionable insights. This demonstrates my ability to analyze sales data and generate valuable business insights.</p>
+        <p>We collected and processed Diwali sales data, focusing on product preferences and customer demographics. Using Python, we performed data cleaning, aggregation, and analysis to identify key trends and patterns. Visualization tools like Tableau were used to highlight insights and inform decision-making.</p>
+        <p>The insights from this analysis help businesses optimize their product offerings and marketing strategies during the Diwali season. By understanding customer preferences and purchasing behaviors, companies can enhance customer satisfaction, improve inventory management, and increase revenue.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h4 class="title">Blog</h4>
+    <div class="blog-container">
+      <h5>HUMAN-CENTERED ARTIFICIAL INTELLIGENCE AND WORKFORCE DISPLACEMENT</h5>
+      <p>AI has the potential to increase economic growth and encourage innovation, but it also sparks worries about unemployment caused by automation. A study conducted by PwC in 2018 revealed that nearly 40% of jobs in developed nations could be highly susceptible to automation by the year 2030. In order to tackle this issue, it is necessary to carefully cultivate AI technologies, emphasizing the importance of AI centered around humans.</p>
+      <ul>
+        <li><strong>Redesigning Jobs and Workflows for AI Integration:</strong> Embracing AI that prioritizes human well-being involves treating data science as a field that values privacy and ethics, and working alongside users to improve processes instead of completely automating them. This frequently involves changing job duties and processes, utilizing AI to enhance human efficiency rather than eliminate jobs. Employees must receive training in order to effectively collaborate with AI assistants. Sectors such as manufacturing need to find a balance between AI automation and human supervision to make sure that functions involving decision-making and analytical thinking are still done by humans.</li>
+        <li><strong>Focusing on Human Skills for Career Resilience:</strong> In terms of career development, human-centered AI highlights the significance of distinctively human abilities such as creativity, critical thinking, communication, and management. Jobs that depend on these capabilities will be better able to withstand AI interference. Education and training that target these skills will be crucial. The increasing importance of developing and managing AI systems will lead to the growth of roles, yet "AI manager" positions should encompass more than just technical skills. They need to support human interests by finding ways for AI to improve human capabilities instead of displacing employees. Strategic implementation is crucial.</li>
+      </ul>
+      <p>AI technology is evolving with a focus on keeping people at the center. It involves looking after people as workers, customers, and members of society in a world where machines are getting smarter. Economic advantages and productivity improvements should not be achieved at the cost of human dignity and employment opportunities. By applying principles centered around humans, we can utilize AI's capabilities to elevate humanity.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:harikrishna15@usf.edu">harikrishna15@usf.edu</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/hari-0b09531a0/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script>
+  particlesJS('particles-js', {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#000000"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 3,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#000000",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+  </script>
+</body>
+</html>
