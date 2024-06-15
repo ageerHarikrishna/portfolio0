@@ -505,18 +505,3 @@ footer nav {
 
 /* GENERAL */
 
-@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Bangers", cursive;
-  background-color: #f0f2f5;
-  scroll-behavior: smooth;
-  position: relative;
-  z-index: 1;
-}
