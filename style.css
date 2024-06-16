@@ -503,3 +503,36 @@ footer nav {
   text-decoration: underline;
 }
 
+/* TECHNICAL SKILLS SECTION */
+.skills-container {
+  background: rgb(249, 249, 248);
+  padding: 4rem 0;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.skills-details {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.skills-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.skills-details p {
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
